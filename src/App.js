@@ -1,11 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css'
+import NavBar from './component/Navbar';
+import Banner from './component/Banner';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>MY name is EARTH</h1>
+      <NavBar/>
+      <Banner/>
     </div>
   );
 }
