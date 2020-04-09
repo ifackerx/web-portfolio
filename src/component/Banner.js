@@ -81,6 +81,13 @@ const Button = styled.button`
   border-radius: 3px;
   width: 10em;
   cursor: pointer;
+
+  :hover {
+    background-color: palevioletred;
+    transition: 0.3s;
+    color: white;
+  }
+
 `;
 
 const Banner = () => {
@@ -93,7 +100,7 @@ const Banner = () => {
 
         <ColumnsBanner>
           <Content>
-            <p>Welcome, My name is</p>
+            <p>Welcome 😊, My name is</p>
             <h1>THONG-NGURN YAMPRADIT</h1>
             <h2>- WEB DEVELOPER</h2>
             <BlockQuote>

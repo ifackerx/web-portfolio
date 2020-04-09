@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 const Logo = styled.div`
   margin-right: auto;
+  color: palevioletred;
+
 `;
 
 const HeaderNav = styled.div`
@@ -10,7 +12,7 @@ const HeaderNav = styled.div`
   font-size: 1em;
   font-weight: 50;
   color: white;
-  background: black;
+  background: #F0EFFF;
   justify-content: flex-end;
   align-items: center;
   padding: 20px 7%;
@@ -20,7 +22,8 @@ const MenuBar = styled.ul``;
 
 const MenuItem = styled.li`
     list-style: none;
-    color: "palevioletred";
+    color: palevioletred;
+    font-weight: 1000;
     display: inline-block;
     padding: 9px 20px;
     align-items: center;
@@ -29,7 +32,7 @@ const MenuItem = styled.li`
     letter-spacing: 2px;
 
     :hover {
-      color: #696969;
+      color: #b35b78	;
     }
 `
 
@@ -49,13 +52,13 @@ const ButtonNav = styled.button`
 const NavBar = () => {
   return (
     <HeaderNav>
-      <Logo>Home</Logo>
+      <Logo></Logo>
       <nav>
         <MenuBar>
-          <MenuItem>About</MenuItem>
-          <MenuItem>Project</MenuItem>
-          <MenuItem>Activity</MenuItem>
-          <MenuItem>Contact</MenuItem>
+          <MenuItem>🧡About</MenuItem>
+          <MenuItem>📚Project</MenuItem>
+          <MenuItem>🔎Activity</MenuItem>
+          <MenuItem>📞Contact</MenuItem>
         </MenuBar>
       </nav>
     </HeaderNav>
