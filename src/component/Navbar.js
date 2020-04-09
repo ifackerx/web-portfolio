@@ -19,7 +19,6 @@ const HeaderNav = styled.div`
 const MenuBar = styled.ul``;
 
 const MenuItem = styled.li`
-   {
     list-style: none;
     color: "palevioletred";
     display: inline-block;
@@ -32,8 +31,7 @@ const MenuItem = styled.li`
     :hover {
       color: #696969;
     }
-  }
-`;
+`
 
 const ButtonNav = styled.button`
   border-radius: 50px;
