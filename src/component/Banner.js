@@ -6,13 +6,17 @@ import reactlogo from "../img/undraw_react.svg";
 const Container = styled.div`
   padding: 3em;
   display: grid;
-  grid-template-columns: 45% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   background-color: white;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    margin: 4px;
+  }
 `;
 const ColumnsBanner = styled.div`
   justify-content: start;
-  // border: 1px solid black;
   word-wrap: break-word;
 
   img {
@@ -33,6 +37,23 @@ const Content = styled.div`
   }
   p {
     font-size: 1.5em;
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    h1 {
+      font-size: 2em;
+      
+    }
+
+    h2 {
+      margin-top: 0.2rem;
+      font-size: 1.15em;
+    }
+    p {
+      margin-top: 0.5rem;
+      font-size: 1em;
+    }
   }
 `;
 
@@ -87,7 +108,6 @@ const Button = styled.button`
     transition: 0.3s;
     color: white;
   }
-
 `;
 
 const Banner = () => {

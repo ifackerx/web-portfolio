@@ -8,8 +8,13 @@ import Ject3 from "../img/ject3.png";
 import Ject4 from "../img/ject4.png";
 import Ject5 from "../img/ject5.png";
 
-const Container = styled.div`
+export const Container = styled.div`
   padding: 2em 10em 2em 10em;
+
+  @media (max-width: 768px) {
+    padding: 1em;
+  }
+
 `;
 
 const Grid_ = styled(Grid)`
@@ -20,14 +25,22 @@ const Grid_ = styled(Grid)`
   grid-template-rows: 1fr;
   align-items: center;
   text-align: center;
+
+  @media (max-width: 768px) {
+  grid-template-columns: 1fr;
+  margin: 1em;
+  }
 `;
 
 const Grid_line3 = styled.div`
   padding-top: 2em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 50%;
   grid-gap: 1.5em 2.5em;
+
+
+
 `;
 
 const HeadLine_ = styled(HeadLine)`
@@ -69,10 +82,19 @@ const Image = styled.div`
 const Detail = styled.div`
   margin: 1em 3em 1em 3em;
   text-align: center;
+
+   @media (max-width: 768px) {
+  margin: 1em;
+  }
+
 `;
 
 const Title = styled.h3`
   margin-bottom: 0.5em;
+
+  @media (max-width: 768px) {
+  margin-top: 1em;
+  }
 `;
 
 const Tag = styled.button`
@@ -81,7 +103,7 @@ const Tag = styled.button`
   padding: 0.25em 1em;
   border: 1px solid palevioletred;
   border-radius: 10px;
-  width: 12%;
+  width: 60px;
   background-color: white;
 
   :hover {
@@ -103,7 +125,7 @@ const Project = () => {
   return (
     <div>
       <Container>
-        <HeadLine_>PROJECT</HeadLine_>
+        <HeadLine_><span>P</span>ROJECT</HeadLine_>
         <Line />
 
         <Grid_>
@@ -168,7 +190,7 @@ const Project = () => {
           </Image>
           <div><Title>Animal Fighter 2D GAME</Title></div>
           <div><Title>Hotel Vender Website</Title></div>
-          <div><Title>Chonburi Website</Title></div>
+          <div><Title>Chonburi Web</Title></div>
 
         </Grid_line3>
       </Container>

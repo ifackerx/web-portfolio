@@ -5,6 +5,8 @@ import NavBar from './component/Navbar';
 import Banner from './component/Banner';
 import AboutME from './component/AboutME';
 import Project from './component/Project';
+import Activity from './component/Activity';
+import TimeLine from './component/TimeLine';
 
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
       <Banner/>
       <AboutME/>
       <Project/>
+      <Activity/>
     </div>
   );
 }
