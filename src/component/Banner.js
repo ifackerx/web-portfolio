@@ -43,7 +43,6 @@ const Content = styled.div`
     text-align: center;
     h1 {
       font-size: 2em;
-      
     }
 
     h2 {
@@ -108,6 +107,13 @@ const Button = styled.button`
     transition: 0.3s;
     color: white;
   }
+
+  @media (max-width: 768px) {
+    padding: 0px;
+    margin: 4px;
+  }
+
+
 `;
 
 const Banner = () => {

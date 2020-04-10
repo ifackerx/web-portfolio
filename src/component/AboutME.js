@@ -11,9 +11,7 @@ export const Grid = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-
   }
-
 `;
 
 const ProfileGrid = styled(Grid)`
@@ -31,14 +29,12 @@ const ProfileGrid = styled(Grid)`
     }
   }
 
-
   @media (max-width: 768px) {
     padding: 1px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     width: 100%;
     height: 100%;
-
   }
 `;
 
@@ -46,7 +42,7 @@ export const HeadLine = styled.h1`
   font-size: 3em;
   font-weight: 900;
   text-align: left;
-  
+
   span {
     color: purple;
   }
@@ -63,13 +59,9 @@ const HeadLineProfile = styled(HeadLine)`
 export const Container = styled.div`
   padding: 4em 10em 2em 10em;
 
-
   @media (max-width: 768px) {
-  padding: 1.1rem;
-
-
+    padding: 1.1rem;
   }
-
 `;
 
 export const Line = styled.div`
@@ -82,10 +74,7 @@ export const Line = styled.div`
 
   @media (max-width: 768px) {
     display: none;
-
-
   }
-
 `;
 
 const Content = styled.p`
@@ -94,10 +83,8 @@ const Content = styled.p`
   text-align: left;
   text-justify: inter-word;
 
-
   @media (max-width: 768px) {
     margin: 0px;
-
   }
 `;
 const AboutME = () => {
@@ -106,8 +93,7 @@ const AboutME = () => {
       <Grid>
         <div>
           <HeadLine>
-            <span>A</span>bout Me{" "}
-            <Line />
+            <span>A</span>bout Me <Line />
           </HeadLine>
 
           <Content>
@@ -140,13 +126,11 @@ const AboutME = () => {
         <div>
           <HeadLine>
             <img src={SVG} width="100%"></img>
-            
           </HeadLine>
         </div>
       </Grid>
 
       <Grid>
-        
         <TimeLine />
 
         <TimeLine />
