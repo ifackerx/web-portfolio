@@ -97,7 +97,7 @@ const Title = styled.h3`
   }
 `;
 
-const Tag = styled.button`
+export const Tag = styled.button`
   color: palevioletred;
   margin: 2em 0.5em 1em;
   padding: 0.25em 1em;

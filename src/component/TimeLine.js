@@ -29,15 +29,15 @@ const Timeline_item = styled.div`
     left: -10px;
     height: 1rem;
     width: 1rem; 
-    border: 2px solid white;
+    border: 2px solid palevioletred;
     border-radius: 50%;
-    background: #1d1f20;
+    background: palevioletred;
     z-index: 1;
   }
 
   ::after {
     content: "";
-    border-left: 2px solid black;
+    border-left: 2px solid palevioletred;
     height: calc(100% + 4rem);
     height: 100%;
     position: absolute;
@@ -53,14 +53,14 @@ const TimeLine = () => {
       <Timeline_>
           <h1>Education</h1>
         <Timeline_item>
-          <span>2008</span>
-          <h3>King mongut initute technologu ladkeabang</h3>
-          <p>GPA 3.08</p>
+          <span>3rd year student</span>
+          <h3>King Mongkut's Institute of Technology Ladkrabang</h3>
+          <p>Faculty of Infomation Technology GPA 3.08</p>
         </Timeline_item>
         <Timeline_item>
-          <span>2008</span>
-          <h3>King mongut initute technologu ladkeabang</h3>
-          <p>GPA 3.08</p>
+          <span>2014-2016</span>
+          <h3>Thai-Austrian Technical college</h3>
+          <p>Vocational Certificate in IT GPA 3.72</p>
         </Timeline_item>
       </Timeline_>
   );

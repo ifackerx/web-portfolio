@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import SVG from "../img/undraw.svg";
 import TimeLine from "./TimeLine";
+import Skill from "./Skill";
 
 export const Grid = styled.div`
   display: grid;
@@ -131,7 +132,7 @@ const AboutME = () => {
       </Grid>
 
       <Grid>
-        <TimeLine />
+        <Skill/>
 
         <TimeLine />
       </Grid>
