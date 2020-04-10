@@ -64,7 +64,7 @@ const BlockQuote = styled.div`
   margin: 0.2em;
   max-width: 33em;
   font-size: 1.15em;
-  &:before {
+  ::before {
     content: "“";
     font-family: serif;
     position: absolute;
@@ -74,7 +74,7 @@ const BlockQuote = styled.div`
     top: 50px;
     color: #78e08f;
   }
-  &:after {
+  ::after {
     content: "";
     display: block;
     position: absolute;
@@ -84,6 +84,14 @@ const BlockQuote = styled.div`
     background: #e56d39;
     left: 1em;
   }
+
+  @media (max-width: 768px) {
+    ::before{
+      display: none;
+    }
+  }
+
+
 `;
 const ButtonFrame = styled.div`
   margin-top: 1.25em;
@@ -111,6 +119,7 @@ const Button = styled.button`
   @media (max-width: 768px) {
     padding: 0px;
     margin: 4px;
+    width: 6em;
   }
 
 
