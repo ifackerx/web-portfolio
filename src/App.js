@@ -7,6 +7,7 @@ import AboutME from './component/AboutME';
 import Project from './component/Project';
 import Activity from './component/Activity';
 import TimeLine from './component/TimeLine';
+import Footer from './component/Footer';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <AboutME/>
       <Project/>
       <Activity/>
+      <Footer/>
     </div>
   );
 }
