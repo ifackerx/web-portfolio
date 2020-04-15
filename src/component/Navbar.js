@@ -30,6 +30,14 @@ const MenuItem = styled.li`
     transition: all 0.3s ease 0s;
     cursor: pointer;
     letter-spacing: 2px;
+    a{
+      color: palevioletred;
+      text-decoration: none
+    }
+
+    a:hover {
+      color: #b35b78	;
+    }
 
     :hover {
       color: #b35b78	;
@@ -58,7 +66,7 @@ const NavBar = () => {
           <MenuItem>🧡About</MenuItem>
           <MenuItem>📚Project</MenuItem>
           <MenuItem>🔎Activity</MenuItem>
-          <MenuItem>📞Contact</MenuItem>
+          <MenuItem><a href = "mailto: thong.ngurnx@gmail.com">📞Contact</a></MenuItem>
         </MenuBar>
       </nav>
     </HeaderNav>
