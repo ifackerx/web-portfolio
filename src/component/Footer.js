@@ -77,7 +77,7 @@ const Footer = () => {
         </Icon>
       </IconGroup>
       <Wrap>
-      <FaRegCopyright/> <p>Design & build By Thong-ngurn Yampradit with React styled-compenent.</p>
+      <FaRegCopyright/> <p>Design & build By Thong-ngurn Yampradit with React styled-compenent</p>
       </Wrap>
 
 
