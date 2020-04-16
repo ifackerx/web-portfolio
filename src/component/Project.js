@@ -7,6 +7,8 @@ import Ject2 from "../img/ject2.png";
 import Ject3 from "../img/ject3.png";
 import Ject4 from "../img/ject4.png";
 import Ject5 from "../img/ject5.png";
+import Ject6 from "../img/ject6.png";
+
 
 export const Container = styled.div`
   padding: 2em 10em 2em 10em;
@@ -14,7 +16,6 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     padding: 1em;
   }
-
 `;
 
 const Grid_ = styled(Grid)`
@@ -27,9 +28,26 @@ const Grid_ = styled(Grid)`
   text-align: center;
 
   @media (max-width: 768px) {
-  grid-template-columns: 1fr;
-  margin: 1em;
+    grid-template-columns: 1fr;
+    margin: 1em;
   }
+`;
+
+const Grid_line2 = styled.div`
+  padding-top: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1.5em 2.5em;
+
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+  }
+
+
 `;
 
 const Grid_line3 = styled.div`
@@ -38,9 +56,6 @@ const Grid_line3 = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 50%;
   grid-gap: 1.5em 2.5em;
-
-
-
 `;
 
 const HeadLine_ = styled(HeadLine)`
@@ -68,14 +83,28 @@ const Frame = styled.div`
 `;
 
 const Image = styled.div`
+  img {
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
 
   text-align: right;
   position: relative;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   :hover {
-    transition: transform .4s; /* Animation */
-    transform: scale(1.02); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transition: transform 0.4s; /* Animation */
+    transform: scale(
+      1.02
+    ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
+`;
+
+const ImageProject = styled(Image)`
+  text-align: center;
+
+  img {
+    width: 80%;
+  }
+
   
 `;
 
@@ -83,17 +112,16 @@ const Detail = styled.div`
   margin: 1em 3em 1em 3em;
   text-align: center;
 
-   @media (max-width: 768px) {
-  margin: 1em;
+  @media (max-width: 768px) {
+    margin: 1em;
   }
-
 `;
 
 const Title = styled.h3`
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
 
   @media (max-width: 768px) {
-  margin-top: 1em;
+    margin-top: 1em;
   }
 `;
 
@@ -125,7 +153,9 @@ const Project = () => {
   return (
     <div>
       <Container>
-        <HeadLine_><span>P</span>ROJECT</HeadLine_>
+        <HeadLine_>
+          <span>P</span>ROJECT
+        </HeadLine_>
         <Line />
 
         <Grid_>
@@ -142,7 +172,6 @@ const Project = () => {
                 href="https://github.com/ifackerx/KMITL-Market"
                 target="_blank"
               >
-                {" "}
                 git hub.
               </Link>
             </Detail>
@@ -174,25 +203,36 @@ const Project = () => {
           </div>
 
           <Image>
-            <img src={Ject2} width="100%" height="100%" />
+            <img src={Ject2} />
           </Image>
         </Grid_>
 
-        <Grid_line3>
-          <Image>
-            <img src={Ject3} width="100%" height="auoto" />
-          </Image>{" "}
-          <Image>
-            <img src={Ject4} width="100%" height="auoto" />
-          </Image>{" "}
-          <Image>
-            <img src={Ject5} width="100%" height="auoto" />
-          </Image>
-          <div><Title>Animal Fighter 2D GAME</Title></div>
-          <div><Title>Hotel Vender Website</Title></div>
-          <div><Title>Chonburi Web</Title></div>
-
-        </Grid_line3>
+        <Grid_line2>
+          <div>
+            <Title>Animal Fighter 2D GAME</Title>
+            <ImageProject>
+              <img src={Ject3} />
+            </ImageProject>
+          </div>
+          <div>
+            <Title>Hotel Vender Web-app</Title>
+            <ImageProject>
+              <img src={Ject4} />
+            </ImageProject>
+          </div>
+          <div>
+            <Title>Chonburi travel Website</Title>
+            <ImageProject>
+              <img src={Ject5} />
+            </ImageProject>
+          </div>
+          <div>
+            <Title>PICLET'S Website</Title>
+            <ImageProject>
+              <img src={Ject6} />
+            </ImageProject>
+          </div>
+        </Grid_line2>
       </Container>
     </div>
   );
