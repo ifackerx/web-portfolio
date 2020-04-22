@@ -32,9 +32,7 @@ const Wrap = styled(IconGroup)`
     font-size: 0.75em;
     align-items: center;
     margin-top: -3em;
-    p {
-        margin-left: 3px;
-    }
+
 `
 
 const Icon = styled.i`
@@ -77,7 +75,7 @@ const Footer = () => {
         </Icon>
       </IconGroup>
       <Wrap>
-      <FaRegCopyright/> <p>Design & build By Thong-ngurn Yampradit with React styled-compenent</p>
+      <p> <FaRegCopyright/> Design & build By Thong-ngurn Yampradit with React styled-compenent</p>
       </Wrap>
 
 

@@ -13,7 +13,7 @@ import Footer from './component/Footer';
 function App() {
   return (
     <div className="App">
-      <NavBar/>
+      {/* <NavBar/> */}
       <Banner/>
       <AboutME/>
       <Project/>

@@ -3,14 +3,14 @@ import styled from "styled-components";
 import { Container } from "./AboutME";
 
 
-const Timeline_ = styled.div`
+export const Timeline_ = styled.div`
     h1 {
         text-align: left;
         margin-bottom: 2rem;
     }
 `;
 
-const Timeline_item = styled.div`
+export const Timeline_item = styled.div`
   display: flex;
   flex-direction: column;
   padding-left: 2.5rem;
