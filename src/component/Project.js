@@ -8,6 +8,8 @@ import Ject3 from "../img/ject3.png";
 import Ject4 from "../img/ject4.png";
 import Ject5 from "../img/ject5.png";
 import Ject6 from "../img/ject6.png";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.min.css";
 
 
 export const Container = styled.div`
@@ -172,7 +174,7 @@ const Project = () => {
                 href="https://github.com/ifackerx/KMITL-Market"
                 target="_blank"
               >
-                git hub.
+                 git hub.
               </Link>
             </Detail>
             <Tag inputColor="">HTML</Tag>
@@ -206,7 +208,7 @@ const Project = () => {
             <img src={Ject2} />
           </Image>
         </Grid_>
-
+        <ScrollAnimation animateIn="fadeIn">
         <Grid_line2>
           <div>
             <Title>Animal Fighter 2D GAME</Title>
@@ -233,6 +235,7 @@ const Project = () => {
             </ImageProject>
           </div>
         </Grid_line2>
+        </ScrollAnimation>
       </Container>
     </div>
   );
