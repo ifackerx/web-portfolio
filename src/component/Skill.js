@@ -6,16 +6,25 @@ import { Container } from "./AboutME";
 export const Tag = styled.button`
   color: palevioletred;
   margin: 2em 0.5em 1em;
-  padding: 3em;
+  padding: 4em;
   border: 1px solid palevioletred;
   border-radius: 10px;
-  height: 100px;
+  height: 80px;
   background-color: white;
   :hover {
     background-color: palevioletred;
     transition: 0.3s;
     color: white;
   }
+
+    @media (max-width: 1024px) {
+     padding: 2em;
+}
+
+
+    @media (max-width: 768px) {
+     padding: 1em;
+}
 `;
 
 

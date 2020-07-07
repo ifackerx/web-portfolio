@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <p className="App-intro">{apiResponse}</p>
+      <p className="App-intro"></p>
       <ScrollAnimation animateIn="fadeIn">
         <Banner />
       </ScrollAnimation>
