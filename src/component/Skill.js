@@ -39,23 +39,29 @@ const Timeline_item = styled.div`
 
 
 const Skill = () => {
-  return (
-      <Timeline_>
-          <h1>Skill</h1>
-           <Tag>
-                HTML
+     return (
+          <Timeline_>
+               <h1>Skill</h1>
+               <Tag>
+                    HTML
            </Tag>
-           <Tag>
-                CSS
+               <Tag>
+                    CSS
            </Tag>
-           <Tag>
-                JACASCRIPT
+               <Tag>
+                    JACASCRIPT
            </Tag>
-           <Tag>
-                DJANGO
+               <Tag>
+                    ReactJs
            </Tag>
-      </Timeline_>
-  );
+               <Tag>
+                    VueJs
+           </Tag>
+               <Tag>
+                    NodeJs
+           </Tag >
+          </Timeline_ >
+     );
 };
 
 export default Skill;

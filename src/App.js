@@ -12,8 +12,11 @@ import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 
 function App() {
+
+
   return (
     <div className="App">
+      <p className="App-intro">{apiResponse}</p>
       <ScrollAnimation animateIn="fadeIn">
         <Banner />
       </ScrollAnimation>
@@ -23,7 +26,7 @@ function App() {
       <ScrollAnimation animateIn="fadeIn">
         <Project />
       </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
+      <ScrollAnimation animateIn="fadeIn" duration="2">
         <Activity />
       </ScrollAnimation>
       <Footer />
